@@ -1,0 +1,10 @@
+services:
+  cloudant-app:
+    build: .
+    container_name: cloudant-flask-app
+    environment:
+      - CLOUDANT_API_KEY=GTZP48e-lYy23sep8ZsRX7yonFLvrftrDfq-hFP5BfHZ
+      - CLOUDANT_SERVICE_URL=https://293e9a3b-b044-4b74-a92a-3b331de2350a-bluemix.cloudantnosqldb.appdomain.cloud
+      - CLOUDANT_DB_NAME=cloudant
+    #entrypoint: [./bin/run_app.sh]
+    restart: always
