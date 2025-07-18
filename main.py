@@ -64,6 +64,7 @@ CLOUDANT_API_KEY = os.environ.get("CLOUDANT_API_KEY", "GTZP48e-lYy23sep8ZsRX7yon
 CLOUDANT_SERVICE_URL = os.environ.get("CLOUDANT_SERVICE_URL", "https://293e9a3b-b044-4b74-a92a-3b331de2350a-bluemix.cloudantnosqldb.appdomain.cloud")
 DB_NAME = os.environ.get("CLOUDANT_DB_NAME", "cloudant")
 
+
 # Initialize Cloudant client
 # try:
 #     iam_token = get_iam_token(CLOUDANT_API_KEY)
