@@ -121,7 +121,7 @@ def create_document():
         logger.error(f"Error creating document: {e}")
         return jsonify({"error": "Internal server error."}), 500
 
-
+      
 @app.route("/documents/<doc_id>", methods=["GET"])
 def get_document(doc_id):
     if not db:
